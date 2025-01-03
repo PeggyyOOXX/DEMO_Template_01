@@ -880,7 +880,6 @@ input[type="radio"]:checked::before {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
-    width: 100%;
 }
 .DepositAmountBtn .amount{
     border-radius: 8px;
@@ -892,6 +891,11 @@ input[type="radio"]:checked::before {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 767px){
+    .DepositAmountBtn .amount {
+        width: calc(20% - 10px);
+    }
 }
 .DepositAmountBtn .amount.disable{
     background: rgba(211, 211, 211, 1);
