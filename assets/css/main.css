@@ -45,10 +45,12 @@ header{
 header .iconBtn{
     border: none;
     background: none;
-    width: 35px;
-    height: 35px;
     position: relative;
     margin-left: 10px;
+}
+header .iconBtn img{
+    width: 35px;
+    height: auto;
 }
 .msg-amoint{
     background: rgba(255, 24, 24, 1);
@@ -68,6 +70,7 @@ header .iconBtn{
 }
 @media (max-width: 767px) {
     header{height: 50px;}
+    header .iconBtn img{width: 24px;}
 }
 /*--- Marquee ---*/
 .Marquee {
