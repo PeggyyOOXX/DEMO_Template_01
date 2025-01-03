@@ -876,7 +876,6 @@ input[type="radio"]:checked::before {
 .DepositAmountBtn {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
     gap: 10px;
 }
 .DepositAmountBtn .amount{
