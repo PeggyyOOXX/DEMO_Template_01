@@ -892,13 +892,13 @@ input[type="radio"]:checked::before {
     justify-content: center;
     align-items: center;
 }
+.DepositAmountBtn .amount.disable{
+    background: rgba(211, 211, 211, 1);
+}
 @media (max-width: 767px){
     .DepositAmountBtn .amount {
         width: calc(20% - 10px);
     }
-}
-.DepositAmountBtn .amount.disable{
-    background: rgba(211, 211, 211, 1);
 }
 .DepositGame-input-wrapper {
     display: flex;
@@ -1006,6 +1006,31 @@ input[type="radio"]:checked::before {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.WithdrawAmountBtn {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.WithdrawAmountBtn .amount{
+    border-radius: 8px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    background: #fff;
+    height: 36px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WithdrawAmountBtn .amount.disable{
+    background: rgba(211, 211, 211, 1);
+}
+@media (max-width: 767px){
+    .WithdrawAmountBtn .amount {
+        width: calc(20% - 10px);
+    }
 }
 .MinValue, .MaxValue {
     font-size: 12px;
