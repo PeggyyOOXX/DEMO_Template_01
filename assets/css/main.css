@@ -511,7 +511,7 @@ footer .Payment-icon .Payment-text{
     }
     .RecordMenu {
         position: fixed;
-        top: 110px;
+        /*top: 110px;*/
         left: -250px;
         width: 250px;
         transition: left 0.3s ease;
@@ -554,6 +554,9 @@ footer .Payment-icon .Payment-text{
     padding: 10px;
 }
 @media (max-width: 767px) {
+    .RecordMenu-content .MemberBox{
+        margin: 10px 0;
+    }
     .RecordMenu-content .MemberBox .container{
         padding: 10px 5px;
     }
