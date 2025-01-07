@@ -1,0 +1,1474 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@600&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html, body{
+    background-color: #160e31;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+hr {
+    margin: .5em 0;
+    border-bottom: 2px solid rgba(109, 4, 221, 1);
+    border-top: unset;
+    opacity: unset;
+}
+img {width: 100%;}
+.main{flex: 1;}
+.wrapper {
+    display: flex;
+    flex-direction: column; /* 讓子元素垂直排列 */
+    min-height: 100vh; /* 最小高度為視窗高度 */
+}
+.iconBtn{
+    border: none;
+    background: none;
+    color: #fff;
+}
+/*--- container ---*/
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1100px;
+}
+/*--- header ---*/
+header{
+    height: 72px;
+    background-color: #2c185b;
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    display: grid;
+    align-items: center;
+}
+header .iconBtn{
+    border: none;
+    background: none;
+    position: relative;
+    margin-left: 10px;
+}
+header .iconBtn img{
+    width: 35px;
+    height: auto;
+}
+.msg-amoint{
+    background: rgba(255, 24, 24, 1);
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 20px;
+    min-width: 20px;
+    width: auto;
+    padding: 0 3px;
+    display: grid;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    header{height: 50px;}
+    header .iconBtn img{width: 24px;}
+}
+/*--- Marquee ---*/
+.Marquee {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 47px;
+    background-color: #2c185b;
+}
+.Marquee .container {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.Marquee-icon{
+    width: 28px;
+    height: auto;
+}
+.Broadcast {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 3em;
+    list-style: none;
+}
+.Broadcast li {
+    height: 47px;
+    line-height: 47px;
+}
+/*--- MemberBox ---*/
+.MemberBox {
+    margin: 20px 0;
+}
+.MemberBox .container{
+    background: linear-gradient(139.21deg, #A421E5 -18.54%, #6D04DD 122.12%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.MemberDetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;   /* 設定橫向間距 */
+}
+.profilepicture{
+    align-items: center;
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+    border: 2.5px solid #fff;
+}
+.MemberVIP{
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
+.MemberName {
+    font-size: 25px;
+    line-height: 25px;
+}
+.MemberBal{
+    font-size: 15px;
+    line-height: 15px;
+}
+.MemberAction{
+    display: grid;
+    align-items: center;
+}
+.MemberAction-icon{
+    width: 38px;
+    height: auto;
+    max-height: 38px;
+}
+@media (max-width: 767px){
+    .MemberBox{margin: 10px;}
+    .MemberAction-icon{width: 30px;max-height: 30px;}
+}
+@media (max-width: 575px){
+    .MemberBox .container{padding: 10px;}
+    .MemberDetail {gap: 5px;padding-right: 0;}
+    .MemberVIP{font-size: 12px;}
+    .MemberName {font-size: 20px;line-height: 20px;}
+    .MemberBal{font-size: 12px;line-height: 12px;}
+    .MemberAction{font-size: 12px;padding-left: 0;}
+}
+@media (max-width: 360px){
+    .MemberName {font-size: 18px;}
+    .MemberBal{font-size: 10px;}
+}
+/*--- MenuBox ---*/
+@media (min-width: 768px) {
+    .MenuBox-icon{
+        width: 48px;
+        height: auto;
+        max-height: 48px;
+    }
+    .MenuBox .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0px;
+    }
+    .MenuBox .btn {
+        width: 124px;
+        height: 124px;
+        font-size: 24px;
+        flex: 1 1 auto;
+        max-width: calc(100% / 8 - 10px);
+        padding: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .MenuBox .container {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .MenuBox .container::-webkit-scrollbar {
+        display: none;
+    }
+    .MenuBox-icon{width: 40px;max-height: 40px;}
+    .MenuBox .btn{
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+@media (max-width: 767px) {
+    .MenuBox-icon{width: 30px;max-height: 30px;}
+    .MenuBox .btn{
+        font-size: 14px;
+        width: 94px;
+        height: 94px;
+        padding: 16px;
+    }
+}
+@media (max-width: 575px){
+    .MenuBox-icon{width: 24px;max-height: 24px;}
+    .MenuBox .btn{
+        font-size: 12px;
+        width: 64px;
+        height: 64px;
+        padding: 10px;
+    }
+}
+/*--- Game Area ImgGroup ---*/
+.GameImgBox{
+    width: 161px;
+    height: 198px;
+    margin: 5px 0px;
+    position: relative;
+}
+.GameImgBox a{
+    text-decoration: none;
+    color: #fff;
+}
+.GameImgBox .GameImg-main{
+    width: 161px;
+    height: 153px;
+}
+.GameImg-hot{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 40px;
+    height: 44px;
+}
+.GameImg-logo{
+    width: 40px;
+    height: auto;
+}
+.GameImgBox .row{
+    padding: 0 15px;
+}
+.GameImgBox .row>*{
+    padding: 0;
+}
+.GameImgBox span{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px){
+    .GameImgBox{width: 102px;height: 125px;font-size: 12px;}
+    .GameImgBox .GameImg-main{width: 102px;height: 97px;}
+    .GameImg-logo{width: 25px;}
+    .GameImg-hot{width: 25px;height: 28px;}
+}
+.gameBox-img {
+    display: grid;
+    grid-template-rows: repeat(2, auto);   /*兩行*/
+    grid-auto-flow: column;   /*自動沿水平方向擴展*/
+    gap: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.gameBox-img::-webkit-scrollbar {
+    display: none;   /*隱藏滾動條 */
+}
+@media (max-width: 767px){
+    .gameBox-img {gap: 10px;}
+}
+.scroll-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.scroll-btn img{
+    width: 16px;
+    height: 16px;
+}
+/*--- AdvertBox ---*/
+@media (max-width: 767px){
+    .AdvertBox .container img{
+        margin: 5px 0;
+    }
+}
+/*--- HotgameBox ---*/
+.HotgameBox{
+    margin: 20px 0;
+}
+@media (max-width: 767px){
+    .HotgameBox{margin: 10px;}
+}
+.HotgameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.HotgameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.HotgameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- DagagameBox ---*/
+.DagagameBox{
+    margin: 20px 0;
+}
+@media (max-width: 767px){
+    .DagagameBox{margin: 10px;}
+}
+.DagagameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.DagagameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.DagagameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- SlotgameBox ---*/
+.SlotgameBox{
+    margin: 20px 0;
+}
+@media (max-width:767px){
+    .SlotgameBox{margin: 10px;}
+}
+.SlotgameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.SlotgameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.SlotgameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- LivegameBox ---*/
+.LivegameBox{
+    margin: 20px 0;
+}
+@media (max-width: 767px){
+    .LivegameBox{margin: 10px;}
+}
+.LivegameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.LivegameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.LivegameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- BonusBox ---*/
+@media (max-width: 767px){
+    .BonusBox .container img{
+        margin: 5px 0;
+    }
+}
+/*--- footer ---*/
+.Publisher-icon img{
+    height: 16px;
+    width: auto;
+    margin: 0 10px;
+}
+footer hr{
+    border-bottom: 1px solid rgba(109, 4, 221, 1);
+    margin: .5em;
+}
+footer .Payment-icon .Payment-text{
+    color: rgba(255, 156, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+.Payment-icon img{
+    height: auto;
+    width: 32px;
+    margin: 0 10px;
+}
+.copyright-bar{
+    background: rgba(44, 24, 91, 1);
+}
+@media (max-width: 767px){
+    footer{margin-bottom: 72px;}
+    .Publisher-icon img{margin: 5px;}
+}
+/* scroll to top */
+.RightFloat {
+    position: fixed;
+    width: 86px;
+    height: 86px;
+    background: rgba(109, 4, 221, 1);
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    opacity: 0; /* 預設完全透明 */
+    visibility: hidden; /* 預設不可見 */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* 過渡效果 */
+}
+.RightFloat.show {
+    opacity: 1;
+    visibility: visible;
+}
+.scroll-to-top img {
+    width: 24px;
+    height: 24px;
+}
+.scroll-to-top span {
+    font-size: 20px;
+    line-height: 20px;
+}
+/* LeftFloat */
+.LeftFloat {
+    position: fixed;
+    width: 85px;
+    height: 360px;
+    background: rgba(109, 4, 221, 1);
+    top: 45%;
+    left: 20px;
+    z-index: 99;
+}
+.LeftFloat img {
+    width: 24px;
+    height: 22px;
+}
+.FloatBtn{
+    color: rgba(153, 153, 153, 1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+    font-size: 12px;
+}
+@media (max-width: 767px) {
+    .LeftFloat {
+        position: fixed;
+        width: 100%;
+        height: 72px;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        display: flex;   /* 啟用彈性佈局 */
+        flex-direction: row;   /* 橫向排列子項目 */
+        align-items: center;   /* 垂直置中子項目 */
+        justify-content: space-around;   /* 子項目均分間距 */
+    }
+    .FloatBtn {
+        margin: 0;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+/*--- Record Menu ---*/
+.RecordMenu{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 16px;
+    height: fit-content;
+}
+.RecordMenu .nav-link{
+    color: #fff;
+    margin: 10px 0;
+}
+.RecordMenu .nav-pills .nav-link.active{
+    background: rgba(166, 95, 201, 1);
+}
+.RecordMenu .nav-link img{
+    width: 24px;
+    height: 24px;
+    margin-right: 3px;
+}
+@media (max-width: 767px) {
+    .RecordMenu {
+        left: -250px;
+    }
+    .RecordMenu.active {
+        left: 0px;
+        padding: 10px;
+    }
+    .RecordMenu {
+        position: fixed;
+        /*top: 110px;*/
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    .RecordMenu .nav-link{
+        padding: 8px 10px;
+    }
+    .show-RecordMenu-btn {
+        display: flex;
+        position: fixed;
+        top: 130px;
+        left: 0px;
+        z-index: 1000;
+        background: rgba(166, 95, 201, 1);
+        border: none;
+        width: 32px;
+        height: 40px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        transition: left 0.3s ease;   /* 過渡效果 */
+        box-shadow: 0 0 10px #000;
+    }
+    .show-RecordMenu-btn img{
+        height: 16px;
+        width: 16px;
+    }
+    .RecordMenu.active .show-RecordMenu-btn{
+        left: 250px;
+    }
+}
+.RecordMenu-content .MemberBox{
+    margin-top: 0;
+}
+.RecordMenu-content .MemberBox .container{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    padding: 10px;
+}
+@media (max-width: 767px) {
+    .RecordMenu-content .MemberBox{
+        margin: 10px 0;
+    }
+    .RecordMenu-content .MemberBox .container{
+        padding: 10px 5px;
+    }
+    .RecordMenu-content .MemberBox .iconBtn{
+        font-size: 10px;
+        padding: 3px;
+    }
+}
+@media (max-width: 360px){
+    .RecordMenu-content .MemberBox .iconBtn{
+        padding: 2px;
+    }
+}
+.Txn-item .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+}
+.Txn-item .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .Txn-item .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.TableRange{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.TableRange .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+}
+.TableRange .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .TableRange .nav-link{
+        padding: 6px 12px;
+    }
+}
+.TableRange .nav {
+    display: flex;
+}
+.TableRange .nav-link {
+    flex: 1;
+    text-align: center;
+}
+.ResultTable{
+    width: 100%;
+    text-align: center;
+}
+.ResultTable .table-title{
+    color: rgba(255, 199, 0, 1);
+    font-weight: 700;
+    border-bottom: 1px solid rgba(166, 95, 201, 1);
+    height: 32px;
+}
+.ResultTable td{
+    height: 40px;
+    border-bottom: 1px solid rgba(211, 211, 211, 1)
+}
+.ResultTable th:first-child, 
+.ResultTable td:first-child {
+    width: 35%;
+}
+.ResultTable th:not(:first-child), 
+.ResultTable td:not(:first-child) {
+    width: 21.6%;
+}
+@media (max-width: 767px) {
+    .ResultTable th:nth-child(1), 
+    .ResultTable td:nth-child(1) {
+        width: 25%;
+    }
+    .ResultTable th:nth-child(3), 
+    .ResultTable td:nth-child(3) {
+        width: 35%;
+    }
+    .ResultTable th:nth-child(4), 
+    .ResultTable td:nth-child(4) {
+        width: 20%;
+    }
+}
+.Txn-title {
+    display: none; /* 預設隱藏 */
+    font-size: 20px;
+    font-weight: 700;
+}
+.Txn-title.active {
+    display: block; /* 只有帶有 .active 的內容顯示 */
+}
+.PageTitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.PageTitle img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+/*--- Wallet ---*/
+.Wallet-item .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+}
+.Wallet-item .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .Wallet-item .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.WalletWhole{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.Wallet-item-title{
+    color: rgba(255, 199, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+.WalletBalanceBox{
+    background: rgba(44, 24, 91, 1);
+    border: 1px solid rgba(255, 199, 0, 1);
+    padding: 8px 24px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.WalletBalanceBox .Amount {
+    text-align: left;
+    flex: 1;   /* 撐滿剩餘空間 */
+}
+.WalletBalanceBox .Currency {
+    text-align: right;
+}
+.WalletActionBox .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+    height: 60px;
+}
+.WalletActionBox .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .WalletActionBox .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.WalletGametypeBox{
+    border: 1px solid rgba(255, 199, 0, 1);
+    border-radius: 8px;
+    padding: 8px;
+}
+.WalletGameBox{
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: rgba(153, 153, 153, 1);
+    max-width: calc(25% - 10px);
+}
+@media (max-width: 767px) {
+    .WalletGameBox{
+        max-width: calc(50% - 10px);
+    }
+}
+.WalletGameBox-logo{
+    width: 48px;
+    height: 18px;
+}
+.WalletGameBox-balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.WalletGameBox-balance .Amount {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+}
+.WalletGameBox-balance .Refresh {
+    text-align: right;
+}
+.WalletGameBox-balance .Refresh img{
+    width: 16px;
+    height: 16px;
+}
+.Wallet-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+/*--- DepositMoney  ---*/
+.DepositMoney-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.ProviderWhole{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.SelectProviderBox .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+    height: 60px;
+}
+.SelectProviderBox .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+.SelectProviderBox .nav-link.active.disable{
+    background: rgba(211, 211, 211, 1);
+    color: rgba(153, 153, 153, 1);
+}
+@media (max-width: 767px) {
+    .SelectProviderBox .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.SelectProviderBox .SelectProviderBtn{
+    padding-right: 0;
+}
+.SelectProvider-item-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(153, 153, 153, 1);
+}
+.SelectProviderBox img{
+    width: 32px;
+    height: 32px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgba(44, 24, 91, 1);
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    background-color: #fff;
+    border-color: rgba(44, 24, 91, 1);
+}
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(44, 24, 91, 1);
+}
+.SelectProvider-dropdown{
+    background: rgba(211, 211, 211, 1);
+    height: 60px;
+    max-width: calc(50% - 10px);
+    margin: 0 5px;
+}
+@media (max-width: 767px) {
+    .SelectProvider-dropdown{
+        max-width: calc(100% - 10px);
+    }
+}
+.SelectProviderBox .SelectProvider-dropdown .dropdown-text {
+    color: rgba(153, 153, 153, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.inputBox{
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+.inputBox .input-content{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+    padding: 8px;
+    padding-left: 30px;
+    margin: 0;
+}
+.inputBox .currency-symbol {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 199, 0, 1);
+}
+.DepositAmountNote{
+    font-size: 12px;
+    color: rgba(153, 153, 153, 1);
+}
+.DepositAmountBtn {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.DepositAmountBtn .amount{
+    border-radius: 8px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    background: #fff;
+    height: 36px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DepositAmountBtn .amount.disable{
+    background: rgba(211, 211, 211, 1);
+}
+@media (max-width: 767px){
+    .DepositAmountBtn .amount {
+        width: calc(20% - 10px);
+    }
+}
+.DepositGame-input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.DepositGame-input-wrapper .input-with-icon {
+    position: relative;
+    width: 100%;
+}
+.DepositGame-input-wrapper .input-content {
+    width: 100%;
+    padding-right: 40px;
+}
+.DepositGame-input-wrapper span,
+.DepositGame-input-wrapper .money-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.DepositGame-input-wrapper span {
+    margin-right: 10px;
+}
+.DepositGame-input-wrapper .money-icon {
+    margin-right: 50px;
+    width: 20px;
+    height: 20px;
+}
+.DepositNextBtn{
+    width: 100%;
+    background: linear-gradient(224deg, #FFC700 0.84%, #FF9C00 99.16%);
+    color: #fff;
+    border-radius: 24px;
+    border: none;
+    height: 48px;
+}
+
+/*--- Withdraw ---*/
+.WithdrawWhole{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.WithdrawStep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Step-container {
+    text-align: center;
+}
+.Step-num{
+    display: inline-block;
+    background: rgba(211, 211, 211, 1);
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+.Step-num.Step-num-on{
+    background: rgba(255, 199, 0, 1);
+    color: #000;
+}
+.WithdrawStep img{
+    width: 106px;
+    height: 6px;
+}
+.TotalBalanceBox{
+    border-bottom: 2px solid #fff;
+}
+.TotalBalance-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+.TotalBalanceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.money-icon {
+    margin-right: 8px;
+    height: 24px;
+    width: auto;
+    position: relative;
+}
+.BalanceAmount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.WithdrawAmount-text{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 156, 0, 1);
+}
+.Withdraw-RangeBox {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.WithdrawAmountBtn {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.WithdrawAmountBtn .amount{
+    border-radius: 8px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    background: #fff;
+    height: 36px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WithdrawAmountBtn .amount.disable{
+    background: rgba(211, 211, 211, 1);
+}
+@media (max-width: 767px){
+    .WithdrawAmountBtn .amount {
+        width: calc(20% - 10px);
+    }
+}
+.MinValue, .MaxValue {
+    font-size: 12px;
+    color: rgba(153, 153, 153, 1);
+}
+.WithdrawAmount-input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.WithdrawAmount-input-wrapper .input-with-icon {
+    position: relative;
+    width: 100%;
+}
+.WithdrawAmount-input-wrapper .input-content {
+    width: 100%;
+    padding-right: 40px;
+}
+.WithdrawAmount-input-wrapper .input-content-amount {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.WithdrawAmount-input-wrapper span {
+    margin-right: 10px;
+}
+.Withdraw-AddBank {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.BankAccount-name{
+    color: rgba(153, 153, 153, 1);
+}
+.BankAccount-num{
+    color: #000;
+    font-size: 20px;
+}
+.ChooseBank-AddBank {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ContactCS {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--- Margin ---*/
+.m-00 {margin: 0;}
+.mt-05 {margin-top: 5px;}
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-30 {margin-top: 30px;}
+.mt-40 {margin-top: 40px;}
+.mt-50 {margin-top: 50px;}
+.mb-05 {margin-bottom: 5px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mb-20 {margin-bottom: 20px;}
+.mb-30 {margin-bottom: 30px;}
+.mb-40 {margin-bottom: 40px;}
+.mb-50 {margin-bottom: 50px;}
+.ml-05 {margin-left: 5px;}
+.ml-10 {margin-left: 10px;}
+.ml-15 {margin-left: 15px;}
+.ml-20 {margin-left: 20px;}
+.ml-30 {margin-left: 30px;}
+.ml-40 {margin-left: 40px;}
+.ml-50 {margin-left: 50px;}
+.mr-05 {margin-right: 5px;}
+.mr-10 {margin-right: 10px;}
+.mr-15 {margin-right: 15px;}
+.mr-20 {margin-right: 20px;}
+.mr-30 {margin-right: 30px;}
+.mr-40 {margin-right: 40px;}
+.mr-50 {margin-right: 50px;}
+.mx-05 {margin-left: 5px;margin-right: 5px;}
+.mx-10 {margin-left: 10px;margin-right: 10px;}
+.mx-15 {margin-left: 15px;margin-right: 15px;}
+.mx-20 {margin-left: 20px;margin-right: 20px;}
+.mx-30 {margin-left: 30px;margin-right: 30px;}
+.mx-40 {margin-left: 40px;margin-right: 40px;}
+.mx-50 {margin-left: 50px;margin-right: 50px;}
+.my-05 {margin-top: 5px;margin-bottom: 5px;}
+.my-10 {margin-top: 10px;margin-bottom: 10px;}
+.my-15 {margin-top: 15px;margin-bottom: 15px;}
+.my-20 {margin-top: 20px;margin-bottom: 20px;}
+.my-30 {margin-top: 30px;margin-bottom: 30px;}
+.my-40 {margin-top: 40px;margin-bottom: 40px;}
+.my-50 {margin-top: 50px;margin-bottom: 50px;}
+/*--- Padding ---*/
+.p-00{padding: 0;}
+.pt-05 {padding-top: 5px!important;}
+.pt-10 {padding-top: 10px!important;}
+.pt-15 {padding-top: 15px!important;}
+.pt-20 {padding-top: 20px!important;}
+.pt-30 {padding-top: 30px!important;}
+.pt-40 {padding-top: 40px!important;}
+.pt-50 {padding-top: 50px!important;}
+.pb-05 {padding-bottom: 5px!important;}
+.pb-10 {padding-bottom: 10px!important;}
+.pb-15 {padding-bottom: 15px!important;}
+.pb-20 {padding-bottom: 20px!important;}
+.pb-30 {padding-bottom: 30px!important;}
+.pb-40 {padding-bottom: 40px!important;}
+.pb-50 {padding-bottom: 50px!important;}
+.pl-05 {padding-left: 5px!important;}
+.pl-10 {padding-left: 10px!important;}
+.pl-15 {padding-left: 15px!important;}
+.pl-20 {padding-left: 20px!important;}
+.pl-30 {padding-left: 30px!important;}
+.pl-40 {padding-left: 40px!important;}
+.pl-50 {padding-left: 50px!important;}
+.pr-05 {padding-right: 5px!important;}
+.pr-10 {padding-right: 10px!important;}
+.pr-15 {padding-right: 15px!important;}
+.pr-20 {padding-right: 20px!important;}
+.pr-30 {padding-right: 30px!important;}
+.pr-40 {padding-right: 40px!important;}
+.pr-50 {padding-right: 50px!important;}
+.px-05 {padding-left: 5px!important;padding-right: 5px!important;}
+.px-10 {padding-left: 10px!important;padding-right: 10px!important;}
+.px-15 {padding-left: 15px!important;padding-right: 15px!important;}
+.px-20 {padding-left: 20px!important;padding-right: 20px!important;}
+.px-30 {padding-left: 30px!important;padding-right: 30px!important;}
+.px-40 {padding-left: 40px!important;padding-right: 40px!important;}
+.px-50 {padding-left: 50px!important;padding-right: 50px!important;}
+.py-05 {padding-top: 5px!important;padding-bottom: 5px!important;}
+.py-10 {padding-top: 10px!important;padding-bottom: 10px!important;}
+.py-15 {padding-top: 15px!important;padding-bottom: 15px!important;}
+.py-20 {padding-top: 20px!important;padding-bottom: 20px!important;}
+.py-30 {padding-top: 30px!important;padding-bottom: 30px!important;}
+.py-40 {padding-top: 40px!important;padding-bottom: 40px!important;}
+.py-50 {padding-top: 50px!important;padding-bottom: 50px!important;}
+
+/*--- Button ---*/
+button{
+    font-size: unset;
+}
+.btn{
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+}
+@media (max-width: 767px){
+    .btn{
+        padding: 4px 8px;
+        border-radius: 16px;
+    }
+}
+.btn-primary{
+    background: linear-gradient(224deg, #FFC700 0.84%, #FF9C00 99.16%);
+}
+.btn-primary-variant{
+    background: none;
+    border: 2px solid #FFC700;
+    color: #FFC700;
+}
+.btn-secondary{
+    background: linear-gradient(139.21deg, #A421E5 -18.54%, #6D04DD 122.12%);
+    color: #fff;
+}
+.btn-BankAccount{
+    background: #fff;
+    height: 67px;
+    border-radius: 16px;
+    border: none;
+}
+.btn-BankAccount.disable{
+    background: rgba(211, 211, 211, 1);
+}
+.btn-AddBank{
+    background: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+.btn-AddBank img{
+    width: 24px;
+    height: 24px;
+}
+.btn-ContactCS{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.btn-ContactCS img{
+    width: 18px;
+    height: 20px;
+}
+
+
+
+.btn-primary.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+    color: #000;
+    text-shadow: unset;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+
+.btn-secondary.active{
+    background-color: #e4a206;
+    border-color: #fee34e;
+}
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus{
+    background-color: #e4a206;
+    border-color: #fee34e;
+}
+.btn-danger{
+    background-color: #ad3a4f;
+    border-color: #792837;
+}
+.btn-danger:hover, .btn-danger:active, .btn-danger:focus{
+    background-color: #792837;
+    border-color: #ad3a4f;
+}
+.btn-white{
+    background-color: #fff;
+    border-color: #4c9dec;
+}
+.btn-white:hover{
+    border: 1px solid #2c4461;
+    background-color: #fff;
+    color: #000;
+}
+.btn-white:active, .btn-white:focus{
+    background-color: #fee34e!important;
+    border-color: #e4a206!important;
+}
+.btn-gray{
+    background-color: #999;
+    border-color: #000;
+}
+.btn-gray:hover, .btn-gray:active, .btn-gray:focus{
+    background-color: #666;
+    border-color: #999;
+}
+.btn-bet-money{
+    background-color: #fff;
+    border-color: #4c9dec;
+    padding: 3px 6px;
+}
+.btn-bet-money:hover, .btn-bet-money:active, .btn-bet-money:focus{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-bet-multiple{
+    background-color: #fff;
+    border-color: #4c9dec;
+    padding: 3px 6px;
+}
+.btn-bet-multiple:hover, .btn-bet-multiple:active, .btn-bet-multiple:focus{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-options{
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec;
+    position: relative;
+}
+.btn-options:hover, .btn-options:active {
+    border: 1px solid #2c4461;
+    background-color: #fff;
+    color: #2c4461;
+}
+.btn-options-clean{
+    color: #666;
+    background-color: #fff;
+    border-color: #a5001e;
+    position: relative;
+}
+.btn-options-clean:hover{
+    color: #fff;
+    background-color: #d2001e;
+}
+.btn-bet-show{
+    background-color: #fff;
+    border-color: #4c9dec;
+    color: #000;
+    padding: 2px 4px;
+    font-size: 14px;
+}
+.btn-bet-show.active{
+    background-color: #e4a206;
+    border-color: #fee34e;
+    color: #000;
+}
+.btn-bet-show:hover, .btn-bet-show:active, .btn-bet-show:focus{
+    background-color: #e4a206;
+    border-color: #fee34e;
+}
+.btn-disabled-grey {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+
+
+
+/*--- modal ---*/
+.modal-content{
+    background: rgba(22, 14, 49, 1);
+}
+.btn-close-light {
+    filter: invert(1); /* 將顏色反轉，適用於白色 */
+}
+.modal-header{
+    border-bottom: none;
+    padding: 10px;
+}
+.modal-footer{
+    border-top: none;
+}
+.InputBox-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.InputBox-title-big{
+    font-size: 28px;
+}
+.input-content{
+    width: 100%;
+    height: 48px;
+    background: rgba(44, 24, 91, 1);
+    border: 1px solid rgba(255, 199, 0, 1);
+    padding: 8px 24px;
+    border-radius: 24px;
+    margin-top: 10px;
+    color: rgba(255, 199, 0, 1);
+}
+.Password-input-wrapper{
+    position: relative;
+}
+.Password-input-wrapper .input-content {
+    padding-right: 40px;   /* 讓密碼框的右邊有空間顯示圖標 */
+}
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: auto;
+}
+.Verification-input-wrapper{
+    position: relative;
+}
+.Verification-input-wrapper .input-content {
+    padding-right: 40px;
+}
+.arrow-cycle-icon {
+    position: absolute;
+    right: 15px; /* 讓按鈕距離右邊的距離 */
+    top: 35px;
+    transform: translateY(-50%); /* 垂直居中 */
+    cursor: pointer;
+    padding: 0;
+    width: 74px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-cycle-icon img {
+    width: 20px;
+    height: 20px;
+}
+#Registersuccess_modal .modal-title{
+    color: rgba(255, 199, 0, 1);
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+#Registersuccess_modal .btn-primary{
+    font-size: 28px;
+    font-weight: 700;
+}
+#Registersuccess_modal .btn-primary img{
+    width: 24px;
+    height: 24px;
+}
+.red-text{
+    color:rgba(255, 24, 24, 1);
+
+}
+
+
+/*--------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px){
+    .PChide{display: none;}
+}
+@media screen and (max-width: 767px){
+    .MOBhide{display: none;}
+}
+
