@@ -416,7 +416,7 @@ footer .Payment-icon .Payment-text{
     background: rgba(44, 24, 91, 1);
 }
 @media (max-width: 767px){
-    footer{margin-bottom: 72px;}
+    footer{padding-bottom: 72px;}
     .Publisher-icon img{margin: 5px;}
 }
 /* scroll to top */
@@ -592,6 +592,7 @@ footer .Payment-icon .Payment-text{
     .Txn-item .nav-link{
         margin: 0 3px;
         padding: 6px 12px;
+        flex: 1;
     }
 }
 .TableRange{
