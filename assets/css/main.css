@@ -431,9 +431,9 @@ footer .Payment-icon .Payment-text{
     display: flex;
     justify-content: center;
     font-weight: 700;
-    opacity: 0; /* 預設完全透明 */
-    visibility: hidden; /* 預設不可見 */
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* 過渡效果 */
+    opacity: 0;   /* 預設完全透明 */
+    visibility: hidden;   /* 預設不可見 */
+    transition: opacity 0.5s ease, visibility 0.5s ease;   /* 過渡效果 */
 }
 .RightFloat.show {
     opacity: 1;
@@ -652,7 +652,7 @@ footer .Payment-icon .Payment-text{
     }
     .ResultTable th:nth-child(3), 
     .ResultTable td:nth-child(3) {
-        width: 35%;
+        width: 30%;
     }
     .ResultTable th:nth-child(4), 
     .ResultTable td:nth-child(4) {
@@ -1406,6 +1406,12 @@ button{
     border-radius: 24px;
     margin-top: 10px;
     color: rgba(255, 199, 0, 1);
+}
+.input-content.areacode{
+    width: 24%;
+}
+.input-content.number{
+    width: 74%;
 }
 .Password-input-wrapper{
     position: relative;
