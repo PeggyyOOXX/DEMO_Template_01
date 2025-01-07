@@ -161,6 +161,10 @@ header .iconBtn img{
     .MemberBal{font-size: 12px;line-height: 12px;}
     .MemberAction{font-size: 12px;padding-left: 0;}
 }
+@media (max-width: 360px){
+    .MemberName {font-size: 18px;}
+    .MemberBal{font-size: 10px;}
+}
 /*--- MenuBox ---*/
 @media (min-width: 768px) {
     .MenuBox-icon{
@@ -563,6 +567,11 @@ footer .Payment-icon .Payment-text{
     .RecordMenu-content .MemberBox .iconBtn{
         font-size: 10px;
         padding: 3px;
+    }
+}
+@media (max-width: 360px){
+    .RecordMenu-content .MemberBox .iconBtn{
+        padding: 2px;
     }
 }
 .Txn-item .nav-link{
