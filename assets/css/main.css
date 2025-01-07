@@ -162,7 +162,7 @@ header .iconBtn img{
     .MemberAction{font-size: 12px;padding-left: 0;}
 }
 @media (max-width: 360px){
-    .MemberName {font-size: 18px;}
+    .MemberName {font-size: 18px;line-height: 18px;}
     .MemberBal{font-size: 10px;}
 }
 /*--- MenuBox ---*/
@@ -194,6 +194,9 @@ header .iconBtn img{
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+    .MenuBox .container::-webkit-scrollbar {
+        display: none;
     }
     .MenuBox-icon{width: 40px;max-height: 40px;}
     .MenuBox .btn{
