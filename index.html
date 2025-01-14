@@ -22,7 +22,7 @@
                         LOGO
                     </div>
 
-                    <div class="col text-end">  <!-- Logged in--->
+                    <div class="col text-end" style="display: none;">  <!-- Logged in--->
                         <button class="iconBtn">
                             <img src="./assets/img/icon/png/mail.png">
                             <span class="msg-amoint">99+</span>
@@ -31,9 +31,19 @@
                             <img src="./assets/img/icon/png/logout.png">
                         </button>
                     </div>
-                    <div class="col text-end" style="display: none;">  <!-- Not Logged in--->
+                    <div class="col text-end">  <!-- Not Logged in--->
                         <button class="btn btn-primary-variant" data-bs-target="#Login_modal" data-bs-toggle="modal">Login</button>
                         <button class="btn btn-primary" data-bs-target="#Signup_modal" data-bs-toggle="modal">Register</button>
+                        <div class="dropdown dropdown-langBox">
+                            <button class="btn dropdown-toggle dropdown-lang" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <img src="./assets/img/icon/en.png">
+                            </button>
+                            <ul class="dropdown-menu dropdown-lang-menu">
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/ph.png"></button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -89,6 +99,10 @@
                             <button class="iconBtn">
                                 <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
                                 <span>Withdrawal</span>
+                            </button>
+                            <button class="iconBtn">
+                                <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                <span>Transfer</span>
                             </button>
                         </div>
                     </div>
@@ -858,8 +872,20 @@
                         <h1 class="modal-title text-center">Login</h1>
                         <div>
                             <div class="InputBox-title">*Phone number</div>
-                            <input type="text" class="input-content areacode" placeholder="+">
-                        <input type="text" class="input-content number" placeholder="Phone number">
+                            <div class="dropdown dropdown-areacode">
+                                <button class="btn dropdown-toggle areacode-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    +84
+                                    <img src="./assets/img/icon/png/arrow-down.png" alt="arrow" class="areacode-arrow">
+                                </button>
+                              
+                                <ul class="dropdown-menu dropdown-areacode-menu">
+                                    <li><a class="dropdown-item" href="#">+64</a></li>
+                                    <li><a class="dropdown-item" href="#">+63</a></li>
+                                    <li><a class="dropdown-item" href="#">+62</a></li>
+                                    <li><a class="dropdown-item" href="#">+000</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="input-content number" placeholder="Phone number">
                         </div>
                         <div>
                             <div class="InputBox-title">*Password</div>
@@ -899,7 +925,18 @@
                     <h1 class="modal-title text-center">Sign up</h1>
                     <div>
                         <div class="InputBox-title">*Phone number</div>
-                        <input type="text" class="input-content areacode" placeholder="+">
+                        <div class="dropdown dropdown-areacode">
+                            <button class="btn dropdown-toggle areacode-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                +84
+                                <img src="./assets/img/icon/png/arrow-down.png" alt="arrow" class="areacode-arrow">
+                            </button>
+                            <ul class="dropdown-menu dropdown-areacode-menu">
+                                <li><a class="dropdown-item" href="#">+64</a></li>
+                                <li><a class="dropdown-item" href="#">+63</a></li>
+                                <li><a class="dropdown-item" href="#">+62</a></li>
+                                <li><a class="dropdown-item" href="#">+000</a></li>
+                            </ul>
+                        </div>
                         <input type="text" class="input-content number" placeholder="Phone number">
                     </div>
                     <div>
