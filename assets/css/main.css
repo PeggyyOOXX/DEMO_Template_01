@@ -72,6 +72,29 @@ header .iconBtn img{
     header{height: 50px;}
     header .iconBtn img{width: 24px;}
 }
+.dropdown-langBox{
+    display: inline-block;
+}
+.dropdown-lang img{
+    width: 40px;
+    height: 40px;
+}
+.dropdown-lang::after {
+    display: none !important;
+}
+.dropdown-lang-menu{
+    background: rgba(93, 13, 177, 1);
+    position: absolute;
+    top: 50px!important;
+    right: 0;
+    left: unset!important;
+    min-width: unset;
+    width: 73px;
+}
+.dropdown-lang-menu img{
+    width: 40px;
+    height: 40px;
+}
 /*--- Marquee ---*/
 .Marquee {
     display: flex;
@@ -561,19 +584,22 @@ footer .Payment-icon .Payment-text{
     padding: 10px;
 }
 @media (max-width: 767px) {
+    .MemberBox{
+        margin: 10px;
+    }
     .RecordMenu-content .MemberBox{
         margin: 10px 0;
     }
-    .RecordMenu-content .MemberBox .container{
+    .MemberBox .container{
         padding: 10px 5px;
     }
-    .RecordMenu-content .MemberBox .iconBtn{
+    .MemberBox .iconBtn{
         font-size: 10px;
         padding: 3px;
     }
 }
 @media (max-width: 360px){
-    .RecordMenu-content .MemberBox .iconBtn{
+    .MemberBox .iconBtn{
         padding: 2px;
     }
 }
@@ -1406,12 +1432,86 @@ button{
     border-radius: 24px;
     margin-top: 10px;
     color: rgba(255, 199, 0, 1);
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
 }
-.input-content.areacode{
-    width: 24%;
+.dropdown-areacode{
+    width: 75px;
+    height: 48px;
+    background: rgba(44, 24, 91, 1);
+    border: 1px solid rgba(255, 199, 0, 1);
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.dropdown-areacode .dropdown-toggle{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    text-align: center;
+}
+.dropdown-areacode-menu{
+    background: rgba(93, 13, 177, 1);
+    border: 1px solid var(--on-primary, rgba(255, 199, 0, 1));
+    position: absolute;
+    min-width: unset;
+    width: 75px!important;
+    max-height: 170px;
+    overflow-y: auto;
+    border-radius: 24px;
+    z-index: 1000;
+    padding: 10px 5px;
+    margin-top: 0!important;
+}
+.areacode-arrow{
+    width: 12px;
+    margin-left: 10px;
+}
+.areacode-toggle{
+    padding-left: 0;
+}
+.areacode-toggle::after {
+    display: none !important;
+}
+.dropdown-areacode-menu .dropdown-item{
+    color: #fff;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 20px;
+    text-align: center;
+}
+.dropdown-areacode-menu .dropdown-item:hover{
+    background: var(--background, rgba(22, 14, 49, 1));
+    padding: 4px 8px;
+}
+.dropdown-areacode-menu::-webkit-scrollbar {
+    width: 6px;
+    position: relative;
+}
+.dropdown-areacode-menu::-webkit-scrollbar-track {
+    background: rgba(177, 177, 177, 0.2);
+    border-radius: 8px;
+    margin: 15px;
+}
+.dropdown-areacode-menu::-webkit-scrollbar-thumb {
+    background: rgba(255, 194, 0, 1);
+    border-radius: 4px;
 }
 .input-content.number{
-    width: 74%;
+    width: calc(98% - 75px);
+    margin-top: -3px;
 }
 .Password-input-wrapper{
     position: relative;
