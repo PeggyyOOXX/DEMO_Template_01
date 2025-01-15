@@ -1404,6 +1404,7 @@ button{
 /*--- modal ---*/
 .modal-content{
     background: rgba(22, 14, 49, 1);
+    border: 1px solid rgba(255, 199, 0, .5);
 }
 .btn-close-light {
     filter: invert(1); /* 將顏色反轉，適用於白色 */
