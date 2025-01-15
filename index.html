@@ -18,11 +18,11 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col text-start header-logo">
+                    <div class="col-3 text-start header-logo">
                         LOGO
                     </div>
 
-                    <div class="col text-end" style="display: none;">  <!-- Logged in--->
+                    <div class="col-9 text-end" style="display: none;">  <!-- Logged in--->
                         <button class="iconBtn">
                             <img src="./assets/img/icon/png/mail.png">
                             <span class="msg-amoint">99+</span>
@@ -30,8 +30,18 @@
                         <button class="iconBtn">
                             <img src="./assets/img/icon/png/logout.png">
                         </button>
+                        <div class="dropdown dropdown-langBox">
+                            <button class="btn dropdown-toggle dropdown-lang" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <img src="./assets/img/icon/en.png">
+                            </button>
+                            <ul class="dropdown-menu dropdown-lang-menu">
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"></button></li>
+                                <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/ph.png"></button></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col text-end">  <!-- Not Logged in--->
+                    <div class="col-9 text-end">  <!-- Not Logged in--->
                         <button class="btn btn-primary-variant" data-bs-target="#Login_modal" data-bs-toggle="modal">Login</button>
                         <button class="btn btn-primary" data-bs-target="#Signup_modal" data-bs-toggle="modal">Register</button>
                         <div class="dropdown dropdown-langBox">
