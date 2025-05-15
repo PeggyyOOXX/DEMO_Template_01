@@ -1,0 +1,1356 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Member Center</title>
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/main.css?07">
+
+        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./assets/js/customize.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- header--->
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-start header-logo">
+                            LOGO
+                        </div>
+
+                        <div class="col text-end header-right">  <!-- Logged in--->
+                            <button class="iconBtn">
+                                <img src="./assets/img/icon/png/mail.png">
+                                <span class="msg-amoint">99+</span>
+                            </button>
+                            <div class="dropdown dropdown-langBox">
+                                <button class="btn dropdown-toggle dropdown-lang" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <img src="./assets/img/icon/en.png">
+                                </button>
+                                <ul class="dropdown-menu dropdown-lang-menu">
+                                    <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/en.png"></button></li>
+                                    <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/vn.png"></button></li>
+                                    <li><button class="dropdown-item" type="button"><img src="./assets/img/icon/ph.png"></button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main container mt-20">
+                <div class="row">
+                    <div class="col-3 RecordMenu">
+                        <div class="nav flex-column nav-pills px-10" aria-orientation="vertical">
+                            <button class="nav-link text-start active" data-bs-toggle="pill" data-bs-target="#GameWallet_tab" type="button">
+                                <img src="./assets/img/icon/png/wallet.png">
+                                <span>Game Wallet</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#Deposit_tab" type="button">
+                                <img src="./assets/img/icon/png/deposit.png">
+                                <span>Deposit</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#Withdraw_tab" type="button">
+                                <img src="./assets/img/icon/png/withdrawal.png">
+                                <span>Withdraw</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#BankManagement_tab" type="button">
+                                <img src="./assets/img/icon/png/bank.png">
+                                <span>Bank Management</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#Transactions_tab" type="button">
+                                <img src="./assets/img/icon/png/transactions.png">
+                                <span>Transactions</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#TaskLog_tab" type="button">
+                                <img src="./assets/img/icon/png/record.png">
+                                <span>Task Log</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#HelpCenter_tab" type="button">
+                                <img src="./assets/img/icon/png/question.png">
+                                <span>Help Center</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#AgencyCooperation_tab" type="button">
+                                <img src="./assets/img/icon/png/Handshake.png">
+                                <span>Agency Cooperation</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#Language_tab" type="button">
+                                <img src="./assets/img/icon/png/earth.png">
+                                <span>Language</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#ResetPassword_tab" type="button">
+                                <img src="./assets/img/icon/png/key.png">
+                                <span>Reset Password</span>
+                            </button>
+                            <button id="show_RecordMenu" class="show-RecordMenu-btn floating-btn PChide">
+                                <img src="./assets/img/icon/png/arrow-right-primary.png">
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-9">
+                        <div class="tab-content RecordMenu-content">
+                            <!-- Game Wallet--->
+                            <div class="tab-pane fade show active" id="GameWallet_tab">
+                                <div class="PageTitle PChide ">
+                                    <div class="tabtheme-title">Game Wallet</div>
+                                </div>
+                                <!-- MemberBox--->
+                                <div class="MemberBox">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-start MemberDetail">
+                                                <img src="./assets/img/profilepicture.png" alt="profile" class="profilepicture">
+                                                <div class="MemberVIP">
+                                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9893 3.42856C11.3415 3.22874 11.6178 2.91791 11.7748 2.54459C11.9318 2.17127 11.9608 1.75646 11.8573 1.36491C11.7538 0.973367 11.5235 0.627112 11.2025 0.380194C10.8815 0.133276 10.4877 -0.000410225 10.0827 9.45624e-07C9.67771 0.000412116 9.28424 0.134898 8.96371 0.382467C8.64319 0.630036 8.41364 0.976758 8.31091 1.36851C8.20818 1.76027 8.23803 2.17502 8.39582 2.54802C8.55361 2.92102 8.83045 3.23129 9.18313 3.4304L9.17396 3.4469C8.57344 4.70019 7.73914 6.49533 6.45101 7.16919C5.39299 7.72203 3.87474 7.44424 2.74705 7.23703C2.72896 6.98061 2.63936 6.73439 2.48842 6.52631C2.33748 6.31823 2.13124 6.15662 1.8931 6.05982C1.65496 5.96301 1.39446 5.9349 1.14115 5.97865C0.887839 6.02241 0.651863 6.13628 0.459996 6.30736C0.268129 6.47844 0.128052 6.69987 0.0556595 6.94653C-0.0167332 7.19318 -0.0185436 7.45519 0.0504337 7.70283C0.119411 7.95046 0.256415 8.17381 0.445899 8.34752C0.635384 8.52123 0.869764 8.63836 1.12245 8.68561L3.82523 15.6626C4.02567 16.1799 4.37783 16.6244 4.83547 16.9379C5.29312 17.2514 5.83486 17.4192 6.38958 17.4192H13.7792C14.3339 17.4192 14.8756 17.2514 15.3333 16.9379C15.7909 16.6244 16.1431 16.1799 16.3435 15.6626L19.0454 8.68561C19.2965 8.63888 19.5296 8.52315 19.7186 8.35139C19.9076 8.17964 20.0451 7.95863 20.1156 7.71315C20.186 7.46767 20.1868 7.20741 20.1177 6.96153C20.0486 6.71566 19.9124 6.49388 19.7243 6.32105C19.5363 6.14823 19.3038 6.03118 19.053 5.98303C18.8022 5.93488 18.5429 5.95752 18.3042 6.04843C18.0656 6.13933 17.8569 6.29491 17.7017 6.49772C17.5465 6.70053 17.4508 6.94256 17.4253 7.19669C16.2711 7.34614 14.7831 7.53683 13.7177 6.98033C12.4553 6.32021 11.609 4.64885 10.9893 3.42856Z" fill="#FFC700"/>
+                                                    </svg><br>
+                                                    <span>LV1</span>
+                                                </div>
+                                                <div>
+                                                    <span class="MemberName">usertest</span><br>
+                                                    <span class="MemberBal">$ 100,000,000</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col text-end MemberAction">
+                                                <div>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/deposit.png" class="MemberAction-icon"><br>
+                                                        <span>Deposit</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
+                                                        <span>Withdrawal</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                                        <span>Transfer</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active">
+                                            <div class="walletBox mt-10 mb-50 container">
+                                                <div class="Wallet-item-title">Total Balance</div>
+
+                                                <div class="totalbalanceBox mt-05">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <span>100,000,000</span>
+                                                        </div>
+                                                        <div>
+                                                            <span>VND</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="walletgametypeBox mt-20">
+                                                    <div class="Wallet-item-title">Daga</div>
+                                                    <div class="row">
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/sv.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>9,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="walletgametypeBox mt-20">
+                                                    <div class="Wallet-item-title">Slot</div>
+                                                    <div class="row">
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/jdb.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/sb-B.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/fc.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/jili.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="walletgametypeBox mt-20">
+                                                    <div class="Wallet-item-title">Casino</div>
+                                                    <div class="row">
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/evo-B.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/ag.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/sa.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/we.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="walletgametypeBox mt-20">
+                                                    <div class="Wallet-item-title">Poker</div>
+                                                    <div class="row">
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/sp.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>999,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/jili.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>999,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="walletgametypeBox mt-20">
+                                                    <div class="Wallet-item-title">Fishing</div>
+                                                    <div class="row">
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/ag.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>99,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="walletgametypeBox mt-20">
+                                                    <div class="Wallet-item-title">Esport</div>
+                                                    <div class="row">
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/hg-B.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>999,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="walletgameBox col-6 col-md-3 my-10 mx-05">
+                                                            <img src="./assets/img/icon/game_logo/mg.png" class="walletgame-logo">
+                                                            <div class="walletgamebalance d-flex justify-content-between align-items-center">
+                                                                <span>999,999</span>
+                                                                <span class="refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Deposit --->
+                            <div class="tab-pane fade" id="Deposit_tab">
+                                <div class="PageTitle PChide">
+                                    <div class="tabtheme-title">Deposit</div>
+                                </div>
+                                <!-- MemberBox--->
+                                <div class="MemberBox">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-start MemberDetail">
+                                                <img src="./assets/img/profilepicture.png" alt="profile" class="profilepicture">
+                                                <div class="MemberVIP">
+                                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9893 3.42856C11.3415 3.22874 11.6178 2.91791 11.7748 2.54459C11.9318 2.17127 11.9608 1.75646 11.8573 1.36491C11.7538 0.973367 11.5235 0.627112 11.2025 0.380194C10.8815 0.133276 10.4877 -0.000410225 10.0827 9.45624e-07C9.67771 0.000412116 9.28424 0.134898 8.96371 0.382467C8.64319 0.630036 8.41364 0.976758 8.31091 1.36851C8.20818 1.76027 8.23803 2.17502 8.39582 2.54802C8.55361 2.92102 8.83045 3.23129 9.18313 3.4304L9.17396 3.4469C8.57344 4.70019 7.73914 6.49533 6.45101 7.16919C5.39299 7.72203 3.87474 7.44424 2.74705 7.23703C2.72896 6.98061 2.63936 6.73439 2.48842 6.52631C2.33748 6.31823 2.13124 6.15662 1.8931 6.05982C1.65496 5.96301 1.39446 5.9349 1.14115 5.97865C0.887839 6.02241 0.651863 6.13628 0.459996 6.30736C0.268129 6.47844 0.128052 6.69987 0.0556595 6.94653C-0.0167332 7.19318 -0.0185436 7.45519 0.0504337 7.70283C0.119411 7.95046 0.256415 8.17381 0.445899 8.34752C0.635384 8.52123 0.869764 8.63836 1.12245 8.68561L3.82523 15.6626C4.02567 16.1799 4.37783 16.6244 4.83547 16.9379C5.29312 17.2514 5.83486 17.4192 6.38958 17.4192H13.7792C14.3339 17.4192 14.8756 17.2514 15.3333 16.9379C15.7909 16.6244 16.1431 16.1799 16.3435 15.6626L19.0454 8.68561C19.2965 8.63888 19.5296 8.52315 19.7186 8.35139C19.9076 8.17964 20.0451 7.95863 20.1156 7.71315C20.186 7.46767 20.1868 7.20741 20.1177 6.96153C20.0486 6.71566 19.9124 6.49388 19.7243 6.32105C19.5363 6.14823 19.3038 6.03118 19.053 5.98303C18.8022 5.93488 18.5429 5.95752 18.3042 6.04843C18.0656 6.13933 17.8569 6.29491 17.7017 6.49772C17.5465 6.70053 17.4508 6.94256 17.4253 7.19669C16.2711 7.34614 14.7831 7.53683 13.7177 6.98033C12.4553 6.32021 11.609 4.64885 10.9893 3.42856Z" fill="#FFC700"/>
+                                                    </svg><br>
+                                                    <span>LV1</span>
+                                                </div>
+                                                <div>
+                                                    <span class="MemberName">usertest</span><br>
+                                                    <span class="MemberBal">$ 100,000,000</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col text-end MemberAction">
+                                                <div>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/deposit.png" class="MemberAction-icon"><br>
+                                                        <span>Deposit</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
+                                                        <span>Withdrawal</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                                        <span>Transfer</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- DepositBox--->
+                                <div class="depositBox">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active">
+                                            <div class="maintabcontent mt-10 mb-50 container">
+                                                <!-- Deposit way & amount --->
+                                                <div>
+                                                    <div class="banktransferBox text-center">
+                                                        <div>Bank Transfer</div>
+                                                        <div><img src="./assets/img/payment-qr.png"></div>
+                                                    </div>
+                                                    <div class="mt-20">
+                                                        <div>Select payment method</div>
+                                                        <div class="dropdown">
+                                                            <button class="dropdownbtnBox dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                                payment method
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item active" href="#">Payment1</a></li>
+                                                                <li><a class="dropdown-item" href="#">Payment2</a></li>
+                                                                <li><a class="dropdown-item" href="#">Payment3</a></li>
+                                                                <li><a class="dropdown-item" href="#">Payment4</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-20">
+                                                        <div>Select bank</div>
+                                                        <div class="dropdown">
+                                                            <button class="dropdownbtnBox dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                                bank
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item active" href="#">Bank1</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bank2</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bank3</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bank4</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-20">
+                                                        <div>Deposit amount</div>
+                                                        <div class="inputBox">
+                                                            <span class="currency-symbol">đ</span>
+                                                            <input type="text" class="input-content" placeholder="150K ~ 150,000K">
+                                                        </div>
+                                                        <div class="amountbtnBox mt-10">
+                                                            <button class="amount" type="button">
+                                                                <span>150K</span>
+                                                            </button>
+                                                            <button class="amount" type="button">
+                                                                <span>300K</span>
+                                                            </button>
+                                                            <button class="amount" type="button">
+                                                                <span>450K</span>
+                                                            </button>
+                                                            <button class="amount" type="button">
+                                                                <span>600K</span>
+                                                            </button>
+                                                            <button class="amount" type="button">
+                                                                <span>750K</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="amountrangeBox mt-05">
+                                                            <span class="MinValue">Min:150k</span>
+                                                            <span class="MaxValue">Max:150,000k</span>
+                                                        </div>
+                                                        <div class="realityamountBox mt-05">
+                                                            <div class="d-flex justify-content-between align-items-center">
+                                                                <div>
+                                                                    <span>Reality</span>
+                                                                </div>
+                                                                <div>
+                                                                    <span>0</span>
+                                                                    <span>(VND)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="redtext">warning message.</span>
+                                                    </div>
+
+                                                    <div class="mt-5">
+                                                        <button class="btn-primary" type="button">
+                                                            <span>Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Withdraw--->
+                            <div class="tab-pane fade" id="Withdraw_tab">
+                                <div class="PageTitle PChide">
+                                    <div class="tabtheme-title">Withdraw</div>
+                                </div>
+                                <!-- MemberBox--->
+                                <div class="MemberBox">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-start MemberDetail">
+                                                <img src="./assets/img/profilepicture.png" alt="profile" class="profilepicture">
+                                                <div class="MemberVIP">
+                                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9893 3.42856C11.3415 3.22874 11.6178 2.91791 11.7748 2.54459C11.9318 2.17127 11.9608 1.75646 11.8573 1.36491C11.7538 0.973367 11.5235 0.627112 11.2025 0.380194C10.8815 0.133276 10.4877 -0.000410225 10.0827 9.45624e-07C9.67771 0.000412116 9.28424 0.134898 8.96371 0.382467C8.64319 0.630036 8.41364 0.976758 8.31091 1.36851C8.20818 1.76027 8.23803 2.17502 8.39582 2.54802C8.55361 2.92102 8.83045 3.23129 9.18313 3.4304L9.17396 3.4469C8.57344 4.70019 7.73914 6.49533 6.45101 7.16919C5.39299 7.72203 3.87474 7.44424 2.74705 7.23703C2.72896 6.98061 2.63936 6.73439 2.48842 6.52631C2.33748 6.31823 2.13124 6.15662 1.8931 6.05982C1.65496 5.96301 1.39446 5.9349 1.14115 5.97865C0.887839 6.02241 0.651863 6.13628 0.459996 6.30736C0.268129 6.47844 0.128052 6.69987 0.0556595 6.94653C-0.0167332 7.19318 -0.0185436 7.45519 0.0504337 7.70283C0.119411 7.95046 0.256415 8.17381 0.445899 8.34752C0.635384 8.52123 0.869764 8.63836 1.12245 8.68561L3.82523 15.6626C4.02567 16.1799 4.37783 16.6244 4.83547 16.9379C5.29312 17.2514 5.83486 17.4192 6.38958 17.4192H13.7792C14.3339 17.4192 14.8756 17.2514 15.3333 16.9379C15.7909 16.6244 16.1431 16.1799 16.3435 15.6626L19.0454 8.68561C19.2965 8.63888 19.5296 8.52315 19.7186 8.35139C19.9076 8.17964 20.0451 7.95863 20.1156 7.71315C20.186 7.46767 20.1868 7.20741 20.1177 6.96153C20.0486 6.71566 19.9124 6.49388 19.7243 6.32105C19.5363 6.14823 19.3038 6.03118 19.053 5.98303C18.8022 5.93488 18.5429 5.95752 18.3042 6.04843C18.0656 6.13933 17.8569 6.29491 17.7017 6.49772C17.5465 6.70053 17.4508 6.94256 17.4253 7.19669C16.2711 7.34614 14.7831 7.53683 13.7177 6.98033C12.4553 6.32021 11.609 4.64885 10.9893 3.42856Z" fill="#FFC700"/>
+                                                    </svg><br>
+                                                    <span>LV1</span>
+                                                </div>
+                                                <div>
+                                                    <span class="MemberName">usertest</span><br>
+                                                    <span class="MemberBal">$ 100,000,000</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col text-end MemberAction">
+                                                <div>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/deposit.png" class="MemberAction-icon"><br>
+                                                        <span>Deposit</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
+                                                        <span>Withdrawal</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                                        <span>Transfer</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- WithdrawBox--->
+                                <div class="withdrawBox">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active">
+                                            <div class="maintabcontent mt-10 mb-50 container">
+
+                                                <!-- Withdraw Balance -->
+                                                <div class="Withdraw-Balance">
+                                                    <div class="WithdrawStep">
+                                                        <div class="Step-container">
+                                                            <span class="Step-num Step-num-on">1</span><br>
+                                                            <span class="">Balance</span>
+                                                        </div>
+                                                        <img src="./assets/img/icon/png/stepline.png">
+                                                        <div class="Step-container">
+                                                            <span class="Step-num">2</span><br>
+                                                            <span class="">Choose Bank</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--Withdraw amount-->
+                                                    <div>
+                                                        <div class="TotalBalanceBox mt-20">
+                                                            <span class="TotalBalance-title">Total Balance</span>
+                                                            <div>
+                                                                <img src="./assets/img/icon/png/money-dollar.png" class="money-icon">
+                                                                <span class="BalanceAmount">150K</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-20">
+                                                            <div class="WithdrawAmount-text">Withdraw Amount</div>
+                                                            <div class="inputBox">
+                                                                <span class="currency-symbol">đ</span>
+                                                                <input type="text" class="input-content" placeholder="150K ~ 150,000K">
+                                                            </div>
+                                                            <div class="amountbtnBox mt-10">
+                                                                <button class="amount" type="button">
+                                                                    <span>150K</span>
+                                                                </button>
+                                                                <button class="amount" type="button">
+                                                                    <span>300K</span>
+                                                                </button>
+                                                                <button class="amount" type="button">
+                                                                    <span>450K</span>
+                                                                </button>
+                                                                <button class="amount" type="button">
+                                                                    <span>600K</span>
+                                                                </button>
+                                                                <button class="amount" type="button">
+                                                                    <span>750K</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="amountrangeBox mt-05">
+                                                                <span class="MinValue">Min:150k</span>
+                                                                <span class="MaxValue">Max:150,000k</span>
+                                                            </div>
+                                                            <div class="realityamountBox mt-05">
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <div>
+                                                                        <span>Reality</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <span>0</span>
+                                                                        <span>(VND)</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <span class="redtext">You do not have enough balance to perform this transaction.</span>
+                                                        </div>
+                                                        
+                                                        <div class="mt-5">
+                                                            <button class="btn-primary" type="button">
+                                                                <span>Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Withdraw Choose Bank -->
+                                                    <div style="display: none;">
+                                                        <div class="BankAccount mt-20">
+                                                            <button class="btn-bankaccount col-12 my-05">
+                                                                <span class="BankAccount-name">Stanley Lee</span><br>
+                                                                <span class="BankAccount-num">51202356845962</span>
+                                                            </button>
+                                                            <button class="btn-bankaccount active col-12 my-05">
+                                                                <span class="BankAccount-name">Stanley Lee</span><br>
+                                                                <span class="BankAccount-num">77255836524189</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="ChooseBank-AddBank">
+                                                            <button class="btn-addbank mt-10" type="button">
+                                                                <img src="./assets/img/icon/png/add-Y.png">
+                                                                <span>Add bank</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="text-center">To change or delete bank information, please contact customer service.</div>
+                                                        <div class="serviceBox">
+                                                            <button class="btn btn-service mt-10" type="button">
+                                                                <img src="./assets/img/icon/png/service.png" class="mr-20">
+                                                                <span>Title</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="WithdrawAmount-input-wrapper mt-10">
+                                                            <div class="input-with-icon">
+                                                                <input type="text" class="input-content" placeholder="Reality">
+                                                                <div class="input-content-amount">
+                                                                    <span>0</span>
+                                                                    <span>(VND)</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mt-5">
+                                                            <button class="btn-primary mt-10" type="button">
+                                                                <span>Withdraw money</span>
+                                                            </button>
+                                                            <button class="btn-primary-variant mt-10" type="button">
+                                                                <span class="">Back</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bank Management--->
+                            <div class="tab-pane fade" id="BankManagement_tab">
+                                <div class="PageTitle PChide">
+                                    <div class="tabtheme-title">Bank Management</div>
+                                </div>
+                                <!-- MemberBox--->
+                                <div class="MemberBox">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-start MemberDetail">
+                                                <img src="./assets/img/profilepicture.png" alt="profile" class="profilepicture">
+                                                <div class="MemberVIP">
+                                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9893 3.42856C11.3415 3.22874 11.6178 2.91791 11.7748 2.54459C11.9318 2.17127 11.9608 1.75646 11.8573 1.36491C11.7538 0.973367 11.5235 0.627112 11.2025 0.380194C10.8815 0.133276 10.4877 -0.000410225 10.0827 9.45624e-07C9.67771 0.000412116 9.28424 0.134898 8.96371 0.382467C8.64319 0.630036 8.41364 0.976758 8.31091 1.36851C8.20818 1.76027 8.23803 2.17502 8.39582 2.54802C8.55361 2.92102 8.83045 3.23129 9.18313 3.4304L9.17396 3.4469C8.57344 4.70019 7.73914 6.49533 6.45101 7.16919C5.39299 7.72203 3.87474 7.44424 2.74705 7.23703C2.72896 6.98061 2.63936 6.73439 2.48842 6.52631C2.33748 6.31823 2.13124 6.15662 1.8931 6.05982C1.65496 5.96301 1.39446 5.9349 1.14115 5.97865C0.887839 6.02241 0.651863 6.13628 0.459996 6.30736C0.268129 6.47844 0.128052 6.69987 0.0556595 6.94653C-0.0167332 7.19318 -0.0185436 7.45519 0.0504337 7.70283C0.119411 7.95046 0.256415 8.17381 0.445899 8.34752C0.635384 8.52123 0.869764 8.63836 1.12245 8.68561L3.82523 15.6626C4.02567 16.1799 4.37783 16.6244 4.83547 16.9379C5.29312 17.2514 5.83486 17.4192 6.38958 17.4192H13.7792C14.3339 17.4192 14.8756 17.2514 15.3333 16.9379C15.7909 16.6244 16.1431 16.1799 16.3435 15.6626L19.0454 8.68561C19.2965 8.63888 19.5296 8.52315 19.7186 8.35139C19.9076 8.17964 20.0451 7.95863 20.1156 7.71315C20.186 7.46767 20.1868 7.20741 20.1177 6.96153C20.0486 6.71566 19.9124 6.49388 19.7243 6.32105C19.5363 6.14823 19.3038 6.03118 19.053 5.98303C18.8022 5.93488 18.5429 5.95752 18.3042 6.04843C18.0656 6.13933 17.8569 6.29491 17.7017 6.49772C17.5465 6.70053 17.4508 6.94256 17.4253 7.19669C16.2711 7.34614 14.7831 7.53683 13.7177 6.98033C12.4553 6.32021 11.609 4.64885 10.9893 3.42856Z" fill="#FFC700"/>
+                                                    </svg><br>
+                                                    <span>LV1</span>
+                                                </div>
+                                                <div>
+                                                    <span class="MemberName">usertest</span><br>
+                                                    <span class="MemberBal">$ 100,000,000</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col text-end MemberAction">
+                                                <div>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/deposit.png" class="MemberAction-icon"><br>
+                                                        <span>Deposit</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
+                                                        <span>Withdrawal</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                                        <span>Transfer</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bank info--->
+                                <div>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active">
+                                            <div class="maintabcontent mt-10 mb-50 container">
+                                                <!-- Bank now -->
+                                                <div style="display: none;">
+                                                    <div class="BankAccount mt-20">
+                                                        <button class="btn-bankaccount col-12 my-05">
+                                                            <span class="BankAccount-name">Stanley Lee</span><br>
+                                                            <span class="BankAccount-num">51202356845962</span>
+                                                        </button>
+                                                        <button class="btn-bankaccount col-12 my-05">
+                                                            <span class="BankAccount-name">Stanley Lee</span><br>
+                                                            <span class="BankAccount-num">77255836524189</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="ChooseBank-AddBank">
+                                                        <button class="btn-addbank mt-10" type="button">
+                                                            <img src="./assets/img/icon/png/add-Y.png">
+                                                            <span>Add bank</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="text-center">To change or delete bank information, please contact customer service.</div>
+                                                    <div class="serviceBox">
+                                                        <button class="btn btn-service mt-10" type="button">
+                                                            <img src="./assets/img/icon/png/service.png" class="mr-10">
+                                                            <span>Customer service</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <!--no bank-->
+                                                <div>
+                                                    <div class="text-center mt-30">
+                                                        <h6>You do not have a bank, please add a new bank.</h6>
+                                                    </div>
+                                                    <button class="btn-addbank mt-10" type="button">
+                                                        <img src="./assets/img/icon/png/add-Y.png">
+                                                        <span>Add bank</span>
+                                                    </button>
+                                                </div>
+
+                                                <!--add bank-->
+                                                <div style="display: none;">
+                                                    <div class="text-center mt-30">
+                                                        <h6>Add a new bank account</h6>
+                                                    </div>
+
+                                                    <div class="mt-20">
+                                                        <div>Account Name</div>
+                                                        <div class="inputBox">
+                                                            <input type="text" class="input-content" placeholder="Enter account name">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-20">
+                                                        <div>Bank</div>
+                                                        <div class="dropdown">
+                                                            <button class="dropdownbtnBox dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                                                Select Bank
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item active" href="#">Bank1</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bank2</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bank3</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bank4</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-20">
+                                                        <div>Account Number</div>
+                                                        <div class="inputBox">
+                                                            <input type="text" class="input-content" placeholder="Enter your account name">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-5">
+                                                        <button class="btn-primary mt-10" type="button">
+                                                            <span>Confirm</span>
+                                                        </button>
+                                                        <button class="btn-primary-variant mt-10" type="button">
+                                                            <span>Cancel</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Transactions --->
+                            <div class="tab-pane fade" id="Transactions_tab">
+                                <div class="PageTitle PChide">
+                                    <div class="tabtheme-title">Transactions</div>
+                                </div>
+                                <!-- MemberBox--->
+                                <div class="MemberBox">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-start MemberDetail">
+                                                <img src="./assets/img/profilepicture.png" alt="profile" class="profilepicture">
+                                                <div class="MemberVIP">
+                                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9893 3.42856C11.3415 3.22874 11.6178 2.91791 11.7748 2.54459C11.9318 2.17127 11.9608 1.75646 11.8573 1.36491C11.7538 0.973367 11.5235 0.627112 11.2025 0.380194C10.8815 0.133276 10.4877 -0.000410225 10.0827 9.45624e-07C9.67771 0.000412116 9.28424 0.134898 8.96371 0.382467C8.64319 0.630036 8.41364 0.976758 8.31091 1.36851C8.20818 1.76027 8.23803 2.17502 8.39582 2.54802C8.55361 2.92102 8.83045 3.23129 9.18313 3.4304L9.17396 3.4469C8.57344 4.70019 7.73914 6.49533 6.45101 7.16919C5.39299 7.72203 3.87474 7.44424 2.74705 7.23703C2.72896 6.98061 2.63936 6.73439 2.48842 6.52631C2.33748 6.31823 2.13124 6.15662 1.8931 6.05982C1.65496 5.96301 1.39446 5.9349 1.14115 5.97865C0.887839 6.02241 0.651863 6.13628 0.459996 6.30736C0.268129 6.47844 0.128052 6.69987 0.0556595 6.94653C-0.0167332 7.19318 -0.0185436 7.45519 0.0504337 7.70283C0.119411 7.95046 0.256415 8.17381 0.445899 8.34752C0.635384 8.52123 0.869764 8.63836 1.12245 8.68561L3.82523 15.6626C4.02567 16.1799 4.37783 16.6244 4.83547 16.9379C5.29312 17.2514 5.83486 17.4192 6.38958 17.4192H13.7792C14.3339 17.4192 14.8756 17.2514 15.3333 16.9379C15.7909 16.6244 16.1431 16.1799 16.3435 15.6626L19.0454 8.68561C19.2965 8.63888 19.5296 8.52315 19.7186 8.35139C19.9076 8.17964 20.0451 7.95863 20.1156 7.71315C20.186 7.46767 20.1868 7.20741 20.1177 6.96153C20.0486 6.71566 19.9124 6.49388 19.7243 6.32105C19.5363 6.14823 19.3038 6.03118 19.053 5.98303C18.8022 5.93488 18.5429 5.95752 18.3042 6.04843C18.0656 6.13933 17.8569 6.29491 17.7017 6.49772C17.5465 6.70053 17.4508 6.94256 17.4253 7.19669C16.2711 7.34614 14.7831 7.53683 13.7177 6.98033C12.4553 6.32021 11.609 4.64885 10.9893 3.42856Z" fill="#FFC700"/>
+                                                    </svg><br>
+                                                    <span>LV1</span>
+                                                </div>
+                                                <div>
+                                                    <span class="MemberName">usertest</span><br>
+                                                    <span class="MemberBal">$ 100,000,000</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col text-end MemberAction">
+                                                <div>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/deposit.png" class="MemberAction-icon"><br>
+                                                        <span>Deposit</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
+                                                        <span>Withdrawal</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                                        <span>Transfer</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- TransactionsBox--->
+                                <div class="transactionsBox">
+                                    <div class="transactionstypeBox">
+                                        <div class="nav nav-pills transactionstype-tablist">
+                                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pill_GameRecord" type="button">Game Record</button>
+                                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pill_DepositRecord" type="button">Deposit</button>
+                                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pill_WithdrawalRecord" type="button">Withdrawal</button>
+                                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pill_BonusRecord" type="button">Bonus</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <!-- Game Record--->
+                                        <div class="tab-pane fade show active" id="pill_GameRecord">
+                                            <div class="recordrange my-10">
+                                                <div class="nav nav-pills">
+                                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#GameRecord_TodayTable" type="button">Today</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#GameRecord_ThisweekTable" type="button">This week</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#GameRecord_LastweekTable" type="button">Last week</button>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade show active" id="GameRecord_TodayTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Game Name</th>
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>AE Sexy</td>
+                                                                    <td>+15,000</td>
+                                                                    <td>9/14, 8:50PM</td>
+                                                                    <td>Win</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Via Casino</td>
+                                                                    <td>-15,000</td>
+                                                                    <td>9/14, 8:50PM</td>
+                                                                    <td>Lose</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>PM-Live</td>
+                                                                    <td>0</td>
+                                                                    <td>9/14, 8:50PM</td>
+                                                                    <td>Draw</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="GameRecord_ThisweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Game Name</th>
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>AE Sexy</td>
+                                                                    <td>+150,000</td>
+                                                                    <td>9/14, 7:50PM</td>
+                                                                    <td>Win</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Via Casino</td>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 7:50PM</td>
+                                                                    <td>Lose</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>PM-Live</td>
+                                                                    <td>0</td>
+                                                                    <td>9/14, 7:50PM</td>
+                                                                    <td>Draw</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="GameRecord_LastweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Game Name</th>
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Result</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>AE Sexy</td>
+                                                                    <td>+50,000</td>
+                                                                    <td>9/14, 6:50PM</td>
+                                                                    <td>Win</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Via Casino</td>
+                                                                    <td>-50,000</td>
+                                                                    <td>9/14, 6:50PM</td>
+                                                                    <td>Lose</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>PM-Live</td>
+                                                                    <td>0</td>
+                                                                    <td>9/14, 6:50PM</td>
+                                                                    <td>Draw</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Deposit Record--->
+                                        <div class="tab-pane fade" id="pill_DepositRecord">
+                                            <div class="recordrange my-10">
+                                                <div class="nav nav-pills">
+                                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Deposit_TodayTable" type="button">Today</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Deposit_ThisweekTable" type="button">This week</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Deposit_LastweekTable" type="button">Last week</button>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade show active" id="Deposit_TodayTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+150,000</td>
+                                                                    <td>9/14, 1:50PM</td>
+                                                                    <td>Approved</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+50,000</td>
+                                                                    <td>9/14, 1:50PM</td>
+                                                                    <td>Deny</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+5,000</td>
+                                                                    <td>9/14, 1:50PM</td>
+                                                                    <td>In process</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="Deposit_ThisweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+50,000</td>
+                                                                    <td>9/14, 2:50PM</td>
+                                                                    <td>Approved</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+15,000</td>
+                                                                    <td>9/14, 2:50PM</td>
+                                                                    <td>Deny</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+1,000</td>
+                                                                    <td>9/14, 2:50PM</td>
+                                                                    <td>In process</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="Deposit_LastweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+5,550,000</td>
+                                                                    <td>9/14, 3:50PM</td>
+                                                                    <td>Approved</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+550,000</td>
+                                                                    <td>9/14, 3:50PM</td>
+                                                                    <td>Deny</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>+50,000</td>
+                                                                    <td>9/14, 3:50PM</td>
+                                                                    <td>In process</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Withdrawal Record--->
+                                        <div class="tab-pane fade" id="pill_WithdrawalRecord">
+                                            <div class="recordrange my-10">
+                                                <div class="nav nav-pills">
+                                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Withdrawal_TodayTable" type="button">Today</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Withdrawal_ThisweekTable" type="button">This week</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Withdrawal_LastweekTable" type="button">Last week</button>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade show active" id="Withdrawal_TodayTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 8:50PM</td>
+                                                                    <td>Approved</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 8:50PM</td>
+                                                                    <td>Deny</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 8:50PM</td>
+                                                                    <td>In process</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="Withdrawal_ThisweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 9:50PM</td>
+                                                                    <td>Approved</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 9:50PM</td>
+                                                                    <td>Deny</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 9:50PM</td>
+                                                                    <td>In process</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="Withdrawal_LastweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Amount</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 10:50PM</td>
+                                                                    <td>Approved</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 10:50PM</td>
+                                                                    <td>Deny</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>-150,000</td>
+                                                                    <td>9/14, 10:50PM</td>
+                                                                    <td>In process</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Bonus Record--->
+                                        <div class="tab-pane fade" id="pill_BonusRecord">
+                                            <div class="recordrange my-10">
+                                                <div class="nav nav-pills">
+                                                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Bonus_TodayTable" type="button">Today</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Bonus_ThisweekTable" type="button">This week</button>
+                                                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Bonus_LastweekTable" type="button">Last week</button>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade show active" id="Bonus_TodayTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Activity</th>
+                                                                    <th>Date</th>
+                                                                    <th>Bonus</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>activity name</td>
+                                                                    <td>9/14, 1:50PM</td>
+                                                                    <td>+1,000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>activity name</td>
+                                                                    <td>9/14, 1:50PM</td>
+                                                                    <td>+1,000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="Bonus_ThisweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Activity</th>
+                                                                    <th>Date</th>
+                                                                    <th>Bonus</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>activity name</td>
+                                                                    <td>9/14, 2:50PM</td>
+                                                                    <td>+1,000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>activity name</td>
+                                                                    <td>9/14, 2:50PM</td>
+                                                                    <td>+1,000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="tab-pane fade" id="Bonus_LastweekTable">
+                                                        <table class="recordtable mt-20">
+                                                            <tbody>
+                                                                <tr class="table-title">
+                                                                    <th>Activity</th>
+                                                                    <th>Date</th>
+                                                                    <th>Bonus</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>activity name</td>
+                                                                    <td>9/14, 3:50PM</td>
+                                                                    <td>+1,000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>activity name</td>
+                                                                    <td>9/14, 3:50PM</td>
+                                                                    <td>+1,000</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Task Log--->
+                            <div class="tab-pane fade" id="TaskLog_tab">TaskLog</div>
+
+                            <!-- Help Center--->
+                            <div class="tab-pane fade" id="HelpCenter_tab">HelpCenter</div>
+
+                            <!-- Agency Cooperation--->
+                            <div class="tab-pane fade" id="AgencyCooperation_tab">AgencyCooperation</div>
+
+                            <!-- Language--->
+                            <div class="tab-pane fade" id="Language_tab">Language</div>
+
+                            <!-- Reset Password--->
+                            <div class="tab-pane fade" id="ResetPassword_tab">ResetPassword</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer -->
+            <footer class="text-center">
+                <div class="Publisher-icon">
+                    <img src="./assets/img/icon/game_logo/sv.png">
+                    <img src="./assets/img/icon/game_logo/jili.png">
+                    <img src="./assets/img/icon/game_logo/fc.png">
+                    <img src="./assets/img/icon/game_logo/jdb.png">
+                    <img src="./assets/img/icon/game_logo/we.png">
+                    <img src="./assets/img/icon/game_logo/bng.png">
+                    <img src="./assets/img/icon/game_logo/mg.png">
+                    <img src="./assets/img/icon/game_logo/pp.png">
+                    <img src="./assets/img/icon/game_logo/hg.png">
+                    <img src="./assets/img/icon/game_logo/pg.png">
+                    <img src="./assets/img/icon/game_logo/ag.png">
+                    <img src="./assets/img/icon/game_logo/evo.png">
+                    <img src="./assets/img/icon/game_logo/sp.png">
+                    <img src="./assets/img/icon/game_logo/sa.png">
+                </div>
+                <hr>
+                <div class="Payment-icon my-20">
+                    <div class="Payment-text">Payment Methods</div><br>
+                    <img src="./assets/img/icon/png/pay/bankpay.png">
+                    <img src="./assets/img/icon/png/pay/momo.png">
+                    <img src="./assets/img/icon/png/pay/mastercard.png">
+                    <img src="./assets/img/icon/png/pay/visaelectron.png">
+                    <img src="./assets/img/icon/png/pay/usdt.png">
+                    <img src="./assets/img/icon/png/pay/paymaya.png">
+                </div>
+                <hr>
+                <div class="copyright-bar py-10">
+                    © 2024 START Copyrights. All Rights Reserved
+                </div>
+            </footer>
+
+            <!-- RightFloat-scroll to top -->
+            <div class="RightFloat scroll-to-top MOBhide" id="scrollToTop">
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/top.png">
+                    <span>top</span>
+                </a>
+            </div>
+
+            <!-- LeftFloat -->
+            <div class="LeftFloat">
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/home.png">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/promotions.png">
+                    <span>Promotion</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/wallet.png">
+                    <span>Wallet</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/support.png">
+                    <span>Support</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/user.png">
+                    <span>Account</span>
+                </a>
+            </div>
+            
+            <!-- Login Modal -->
+            <div class="modal fade" id="Login_modal" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title text-center">Login</h1>
+                            <div>
+                                <div class="InputBox-title">*Phone number</div>
+                                <input type="text" class="input-content" placeholder="Phone number">
+                            </div>
+                            <div>
+                                <div class="InputBox-title">*Password</div>
+                                <div class="Password-input-wrapper">
+                                    <input type="text" class="input-content" placeholder="Password">
+                                    <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                                <div class="Verification-input-wrapper">
+                                    <input type="text" class="input-content" placeholder="Verification code">
+                                    <button class="btn btn-primary arrow-cycle-icon">
+                                        <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center mt-30">
+                                <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                            </div>
+                            <div class="text-center mt-30">Don't have an account yet? 
+                                <a href="#" class="red-text" data-bs-target="#Signup_modal"data-bs-toggle="modal">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup Modal -->
+            <div class="modal fade" id="Signup_modal" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="modal-title text-center">Sign up</h1>
+                        <div>
+                            <div class="InputBox-title">*Phone number</div>
+                            <input type="text" class="input-content" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <div class="InputBox-title">*Password</div>
+                            <div>Daga123123 (the letter 'D' is in uppercase, without diacritics)</div>
+                            <div class="Password-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Password">
+                                <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                            <div class="Verification-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Verification code">
+                                <button class="btn btn-primary arrow-cycle-icon">
+                                    <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                </button>
+                            </div>
+                            <label>
+                                <input type="radio" name="agree"> I agree to the 
+                                <a href="#" class="red-text">relevant terms</a> and <a href="#" class="red-text">privacy policy</a>
+                            </label>
+                        </div>
+                        <div class="text-center mt-30">
+                            <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Register success Modal -->
+            <div class="modal fade" id="Registersuccess_modal" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title text-center">You have successfully registered!</div>
+                        <div class="text-center my-30">
+                            <button class="btn btn-primary" data-bs-toggle="modal">
+                                <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                Please refresh!
+                                <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </body>
+</html>
