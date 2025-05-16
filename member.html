@@ -345,12 +345,8 @@
                                         <div class="tab-pane fade show active">
                                             <div class="maintabcontent mt-10 mb-50 container">
                                                 <!-- Deposit way & amount --->
-                                                <div>
-                                                    <div class="banktransferBox text-center">
-                                                        <div>Bank Transfer</div>
-                                                        <div><img src="./assets/img/payment-qr.png"></div>
-                                                    </div>
-                                                    <div class="mt-20">
+                                                <div style="display: none;">
+                                                    <div>
                                                         <div>Select payment method</div>
                                                         <div class="dropdown">
                                                             <button class="dropdownbtnBox dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -428,6 +424,61 @@
                                                     </div>
                                                 </div>
 
+                                                <!-- Payment info --->
+                                                <div>
+                                                    <div class="paymentqrBox text-center">
+                                                        <div>Payment</div>
+                                                        <div><img src="./assets/img/payment-qr.png"></div>
+                                                    </div>
+                                                    <div class="paymentinfoBox my-20 px-3">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Bank</div>
+                                                                <div class="yellowtext">XXX Bank</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Account Name</div>
+                                                                <div class="yellowtext">Name Name</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Account Number</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="greentext">107884096583</div>
+                                                                    <button class="btn-infocopy">copy</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Deposit Account</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="greentext">150,000</div>
+                                                                    <button class="btn-infocopy">copy</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Date</div>
+                                                                <div class="yellowtext">2025-05-13 00:00:00</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Status</div>
+                                                                <div class="yellowtext">In process</div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Transfer Note</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="redtext">123456789</div>
+                                                                    <button class="btn-infocopy">copy</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 col-md-6 mt-3">
+                                                                <div class="paymentinfo-title">Order Note</div>
+                                                                <div class="d-flex justify-content-between">
+                                                                    <div class="redtext">dlsd0ejkn9</div>
+                                                                    <button class="btn-infocopy">copy</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -680,7 +731,7 @@
                                                 </div>
 
                                                 <!--no bank-->
-                                                <div>
+                                                <div style="display: none;">
                                                     <div class="text-center mt-30">
                                                         <h6>You do not have a bank, please add a new bank.</h6>
                                                     </div>
@@ -691,7 +742,7 @@
                                                 </div>
 
                                                 <!--add bank-->
-                                                <div style="display: none;">
+                                                <div>
                                                     <div class="text-center mt-30">
                                                         <h6>Add a new bank account</h6>
                                                     </div>
